@@ -26,10 +26,10 @@ function App() {
       <h1>Full Name Display</h1>
       <form onSubmit={(e) => handleClick(e)}> 
   <label for="fname">First name: </label>
-  <input type="text" id="fname" name="fname" required={true} value={fname} onChange={(e) => handleFname(e)}/><br/><br/>
+  <input type="text" id="fname" name="fname" required={true} value={fname} onChange={(e) => handleFname(e)}/><br/>
   <label for="lname">Last name: </label>
-  <input type="text" id="lname" name="lname" required={true} value={lname} onChange={(e) => handleLname(e)}/><br/><br/>
-  <button >Submit</button>
+  <input type="text" id="lname" name="lname" required={true} value={lname} onChange={(e) => handleLname(e)}/><br/>
+  <button type="submit">Submit</button>
 </form> 
 {fullName ? <p>Full Name: {fullName}</p> : () => {return;}} 
     </div>
